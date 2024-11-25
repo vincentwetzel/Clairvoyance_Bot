@@ -80,6 +80,7 @@ def init_token() -> str:
                     return line.split("=")[1]
 
 def update_token():
+    pass
     # TODO: Make it so I can DM the bot a new token and it will update it.
 
 
