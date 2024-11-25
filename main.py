@@ -71,12 +71,16 @@ def print_average_vision_score(summoner_name: str, games_count: int) -> int:
 
 
 def init_token() -> str:
+    # TODO: Update this so it will have a seperate file for the Riot token.
     if os.path.isfile("settings.ini"):
         with open("settings.ini", 'r') as f:
             settings_lines = f.readlines()
             for line in settings_lines:
                 if "riot_api_token=" in line:
                     return line.split("=")[1]
+
+def update_token():
+    # TODO: Make it so I can DM the bot a new token and it will update it.
 
 
 if __name__ == "__main__":
